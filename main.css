@@ -1,0 +1,97 @@
+/*task1*/
+body{
+    font-family: sans-serif;
+}
+.task{
+    display: grid;
+}
+table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: gray;
+    padding:25px;
+}
+th{
+    background-color: gray;
+}
+/*task2*/
+.box{
+    border: solid black 3px ; 
+    border-radius:15px; 
+    width:550px; 
+    height: 530px; 
+    padding: 15px ;
+}
+.header{
+    font-size: x-large; 
+    font-family: sans-serif;
+}
+.lname{
+    padding: 200px;
+}
+#fname,#lname{
+    padding: 8px; 
+    width: 250px; 
+    border-radius: 5px;
+}
+#email{
+    padding: 8px;
+    width: 525px; 
+    border-radius: 5px;
+}
+.query{
+    display: flex;
+    font-family: sans-serif;
+}
+.query_1,.query_2{
+    width: 255px; 
+    border:solid black 1px ; 
+    border-radius: 5px; 
+    padding: 5px; 
+    margin: 5px;
+}
+#message{
+    font-family: sans-serif;
+   border-radius: 5px;
+   resize: none;
+}
+#general{
+    padding:5px;
+}
+.button{
+    width: 550px ;
+    padding: 12px;
+    background-color: rgb(7, 108, 7);
+    color: white; 
+    border-radius:10px; 
+    border: rgb(7, 108, 7);
+}
+* {
+    box-sizing: border-box;
+  }
+  
+header{
+    background-color: beige;
+    color: blue;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+nav{
+    float: left;
+    background-color: aqua;
+    height: 100px;
+    width: 30%;
+}
+article{
+    background-color: blanchedalmond;
+    float: right;
+    width: 70%;
+}
+footer{
+    background-color: beige;
+    color: blue;
+    padding: 20px;
+    text-align: center;
+    
+}

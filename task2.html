@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>
+            task 2
+        </title>
+    </head>
+    <body>
+        <div>
+            <form>
+                <div class="task2">
+
+                    <h1 class="header">
+                        Contact Us
+                    </h1>
+
+                    <div class="box_items">
+
+                        <div class="row1">
+
+                            <label for="fname">
+                                First Name
+                            </label>
+
+                            <label class="lname" for="lname" >
+                                Last Name
+                            </label>
+
+                            <input type="text" id="fname" required > 
+
+                            <input type="text" id="lname" required >
+
+                        </div>
+
+                        <div class="row2">
+                            <label for="email">
+                                    Email Address 
+                            </label>
+
+                                <br>
+
+                            <input type="text" id="email" required >
+
+                        </div>
+
+                        <br>
+
+                            <label for="query">
+                                query type<!--if put inside div.query (display:flex;) will be applied (I don't want this)  -->
+                            </label>
+
+                        <br>
+
+                        <div class="query">
+
+                        <div class="query_1">
+
+                            <input type="radio" id="general" name="query" required>
+
+                            <label for="general">
+                                   general enquiry
+                            </label>
+
+                        </div>
+
+                        <div class="query_2">
+
+                            <input type="radio" id="support" name="query" required>
+
+                                <label for="support">
+                                    support request
+                                </label> 
+
+                        </div> 
+
+                         </div>  
+
+                        <br>
+
+                        <div class="message">
+
+                        <label for="message">
+                              Message 
+                        </label>
+
+                        <br>
+
+                        <textarea id="message" rows="6" cols="78">
+                        </textarea>
+                        
+                        </div>
+
+                        <br>
+                        
+                        <div class="check">   
+
+                            <input type="checkbox" id="check" required>
+
+                                <label for="check">
+                                    I consent to being contacted by the team 
+                                </label>
+
+                            <br><br>
+                        </div>
+
+                        <br>
+
+                        <div class="submit">
+                            <input type="submit" class="button">
+                        </div>
+
+                    </div>
+                 </div>
+            </form>
+        </div>
+
+
+    </body>
+</html>
