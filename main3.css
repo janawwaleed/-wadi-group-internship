@@ -11,7 +11,7 @@ body{
     margin: 80px;
     max-width: fit-content;
 }
-.task3 > div{
+.task3 > * {
     padding: 40px;
     border-radius: 8px;
 }
@@ -76,8 +76,7 @@ body{
     color: black;
     opacity: 70%;
 }
-
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .task3 {
         grid-template-columns: repeat(1,1fr);
       }
