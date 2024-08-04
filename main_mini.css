@@ -1,0 +1,98 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    --Big-Shoulders-Display: "Big Shoulders Display", cursive;
+    --Lexend-Deca: "Lexend Deca", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    margin: 60px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: grid;
+    height: 460px;
+    padding: 35px;
+}
+
+.box button {
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container .box:first-child {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.container .box:nth-child(2) {
+    background-color: var(--Dark-cyan);
+}
+
+.container .box:nth-child(3) {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.box:first-of-type button {
+    color: var(--Bright-orange);
+}
+.box:nth-of-type(2) button {
+    color: var(--Dark-cyan);
+}
+.box:nth-of-type(3) button {
+    color: var(--Very-dark-cyan);
+}
+
+.box img {
+    width: 70px;
+    height: 50px;
+}
+
+.box .type {
+    font-size: 40px;
+    font-family: var(--Big-Shoulders-Display);
+    color: var(--Very-light-gray);
+}
+
+.box p {
+    color: var(--Transparent-white);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 767px) {
+    .container {
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        box-shadow: 0px 0px 20px 0.25px #b5aeae;
+        margin-bottom: 0;
+        padding: 10px;
+        min-height: 600px;
+        .box:first-child {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 25px;
+        }
+        .box:nth-child(3) {
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+}
