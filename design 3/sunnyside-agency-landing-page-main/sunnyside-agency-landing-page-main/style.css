@@ -66,42 +66,68 @@
     display: grid;
     grid-template-columns: repeat(2,2fr);
     grid-template-rows: repeat(3,2fr);
-    height: 800px;
-    width: 1349px;
+    /*height: 800px;*/
+    width: 100%;
     padding: 0;
 }
 .section_2 img{
-    width: 674px;
-}
-.item_2{
-    background-image: url(images/desktop/image-transform.jpg);
-    background-size: contain;
-    background-position: center;
-}
-.box_title{
-    padding-bottom: 50px;
-}
-.box_txt{
-   padding-bottom: 50px;
+    object-fit: contain;
 }
 .content{
     padding: 150px;
 }
-.item_5 .item_6{
-    position: relative;
+.box_title{
+   padding-bottom: 50px;
+   font-family: "Fraunces";
+   font-weight: 900;
+   font-size: 40px;
+   color: hsl(212, 27%, 19%);
+}
+.box_txt{
+   padding-bottom: 50px;
+   color: hsl(212, 27%, 19%);
+   font-weight: 600;
+   opacity: 0.5;
+}
+.learn_btn{
+    border-radius: 20px;
+    border-color: white;
+    border: white;
+    background-color: white;
+    font-family: "Fraunces";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline 8px ;
+    text-decoration-color: pink;
+    color: hsl(212, 27%, 19%);
 }
 .cntnt {
     position: absolute;
-    bottom: -1500px;
+    bottom: -1600px;
+    
 }
 .cntnt .img_title{
-    left: 150px;
+   position: absolute;
+   font-family: "Lora";
+   font-weight: 700;
+   text-transform: capitalize;
+   color: hsl(212, 27%, 19%);
+   left: 230px;
+   width: 250px;
 }
 .cntnt .img_txt{
     position: absolute;
-    top: 100px;
-    left: 150px;
+    top: 80px;
+    left: 180px;
     width: 350px;
+    color: hsl(212, 27%, 19%);
+    font-weight: 600;
+    text-align: center;
+}
+.section_3{
+    display: flex;
+    height: 800px;
+    width: 1349px;
 }
 
 
